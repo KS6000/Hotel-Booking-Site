@@ -1,49 +1,62 @@
-# 🏨 Hotel Booking Automation (Cypress)
+# 🏨 Hotel Booking Automation Project
+
+![Cypress Tests](https://github.com/KS6000/Hotel-Booking-Site/actions/workflows/cypress.yml/badge.svg)
 
 ## 📌 Project Overview
-This project automates the reservation flow of a hotel booking website using **Cypress** and **JavaScript**.
+This project is an end-to-end **automation testing framework** built using **Cypress**.
 
-It covers end-to-end user journeys including navigation, booking, validation, and price verification.
+It tests a hotel booking application, covering:
+- Navigation flows
+- Reservation functionality
+- Form validation
+- End-to-end booking scenarios
 
----
-
-## 🧪 Test Cases Covered
-
-### Reservation Flow
-- **TC007** – Navigate to Plans page
-- **TC008** – Click Reserve Room button
-- **TC009** – Complete reservation form with valid data
-- **TC010** – Submit reservation flow
-- **TC011** – Validate error messages for empty fields
-- **TC012** – Verify price updates when stay changes
-
-### Additional Tests
-- **Smoke Tests** – Basic application checks
-- **Auth Tests** – Authentication-related scenarios
+The framework is designed using the **Page Object Model (POM)** for better scalability and maintainability.
 
 ---
 
-## 🏗️ Framework Design
+## 🧪 Test Coverage
 
-This project uses the **Page Object Model (POM)** design pattern:
+### 🔹 Smoke Tests
+- Basic application checks
 
-- `homePage.js` → Handles navigation actions
-- `bookingPage.js` → Handles reservation form interactions
-- `booking.cy.js` → End-to-end test scenarios
+### 🔹 Auth Tests
+- Authentication-related scenarios
+
+### 🔹 Booking Tests
+- Navigate to reservation page
+- Click reserve room
+- Complete booking form
+- Submit reservation
+- Validate confirmation
+- Validate error messages
+- Verify dynamic price updates
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🏗️ Framework Design (POM)
 
-- Cypress
-- JavaScript
-- Node.js
-- Git & GitHub
+This project follows the **Page Object Model (POM)**:
+
+- `homePage.js` → Handles navigation actions  
+- `bookingPage.js` → Handles booking form interactions  
+- `booking.cy.js` → End-to-end test scenarios  
 
 ---
 
-## ▶️ How to Run
+## ⚙️ Tech Stack
 
+- **Cypress**
+- **JavaScript**
+- **Node.js**
+- **Git & GitHub**
+- **GitHub Actions (CI/CD)**
+
+---
+
+## 🚀 How to Run Locally
+
+### 1. Clone the repo
 ```bash
-npm install
-npx cypress open
+git clone https://github.com/KS6000/Hotel-Booking-Site.git
+cd Hotel-Booking-Site
